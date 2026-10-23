@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17131f">
+  <title>La Noche de los Disfraces</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio" data-page="home">
+      <span class="brand-icon" aria-hidden="true">🎃</span>
+      <span><strong>LA NOCHE</strong><small>CONCURSO DE DISFRACES</small></span>
+    </a>
+    <nav id="nav" aria-label="Navegación principal">
+      <button data-page="home" class="nav-btn active">Inicio</button>
+      <button data-page="profile" class="nav-btn">Mi perfil</button>
+      <button data-page="add" class="nav-btn">Agregar disfraz</button>
+      <button data-page="list" class="nav-btn">Disfraces y votos</button>
+      <button data-page="results" id="tab-results" class="nav-btn" style="display:none">Resultados</button>
+    </nav>
+  </header>
+  <main id="app" class="page-wrap" aria-live="polite">
+    <section class="loading-panel"><span class="moon">🌙</span><p>Preparando la noche...</p></section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer>Hecho para una noche de sustos, risas y disfraces. 🦇</footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
